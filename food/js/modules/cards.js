@@ -47,7 +47,7 @@ function cards() {
 
 
 
-    getResource('https://raw.githubusercontent.com/240video/240video.github.io/main/food/menu')
+    getResource('https://raw.githubusercontent.com/240video/240video.github.io/main/food/menu.json')
         .then(data => {
             data.forEach(({ img, altimg, title, descr, price }) => {
                 new MenuCard(img, altimg, title, descr, price, '.menu__field .container').render();
